@@ -549,7 +549,7 @@ body { background: #222; color: #e6e6e6; }
     100% { background: transparent; } }
   @keyframes border_focus_animation { 0% { box-shadow: 0 0 4px 0.25px #545454, 0 0 0 0.5px #828282; }
     100% { box-shadow: 0 0 4px 0 #545454, 0 0 0 0 #828282; } }
-  .c-message_attachment { color: #29b2ee; }
+  .c-message_attachment { color: #8b8685; }
   .c-message_attachment__body{background-color:#1d2129;}
   .c-message_attachment__border { background-color: #545454; }
   .c-message_attachment__delete { color: #949494; }
