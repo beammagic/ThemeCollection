@@ -34,13 +34,13 @@ body { background: #222; color: #e6e6e6; }
   .p-channel_sidebar__list { background-color: #363636; color: #e6e6e6; }
   .p-channel_sidebar__channel, .p-channel_sidebar__channel:link, .p-channel_sidebar__channel:visited, .p-channel_sidebar__channel:hover, .p-channel_sidebar__link, .p-channel_sidebar__link:link, .p-channel_sidebar__link:visited, .p-channel_sidebar__link:hover { color: rgba(230, 230, 230, 0.8) !important; }
   .p-channel_sidebar__channel--selected, .p-channel_sidebar__channel--selected:link, .p-channel_sidebar__channel--selected:visited, .p-channel_sidebar__channel--selected:hover, .p-channel_sidebar__link--selected, .p-channel_sidebar__link--selected:link, .p-channel_sidebar__link--selected:visited, .p-channel_sidebar__link--selected:hover { color: #e6e6e6; }
-  .p-channel_sidebar__channel:hover, .p-channel_sidebar__link:hover { background: #222 !important; }
+  .p-channel_sidebar__channel:hover, .p-channel_sidebar__link:hover { background: #222 !important;}
   .p-channel_sidebar__header { color: #e6e6e6 !important; }
   /*.p-channel_sidebar__channel--im.p-channel_sidebar__channel--selected .c-presence, .p-channel_sidebar__channel--im-slackbot.p-channel_sidebar__channel--selected::before { color: #e6e6e6; }*/
   .c-icon--presence-online:before{color:#99D04A;}
   .c-icon--presence-dnd:before{color:#99D04A;}
   .p-channel_sidebar__channel--im .c-presence--away { color: #949494; }
-  .p-channel_sidebar__channel--selected, .p-channel_sidebar__link--selected { background: #252423 !important;}
+  .p-channel_sidebar__channel--selected, .p-channel_sidebar__link--selected { background: #252423 !important; border-left:#3578e5 ridge 15px; border-top:#3578e5 inset 1px; border-bottom:#3578e5 outset 1px; zoom:1.1;}
   .p-channel_sidebar__channel--mpim:not(.p-channel_sidebar__channel--draft):before{font-size:25px;color:#9bb6df;}
   /*.p-channel_sidebar__channel--mpim:before,.p-channel_sidebar__channel--selected:before{color:#9bb6df;}*/
   .p-channel_sidebar__channel--selected:hover, .p-channel_sidebar__link--selected:hover { background: #545454 !important; }
