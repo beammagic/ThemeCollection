@@ -39,6 +39,7 @@ body { background: #222; color: #e6e6e6; }
   /*.p-channel_sidebar__channel--im.p-channel_sidebar__channel--selected .c-presence, .p-channel_sidebar__channel--im-slackbot.p-channel_sidebar__channel--selected::before { color: #e6e6e6; }*/
   .c-icon--presence-online:before{color:#99D04A;}
   .c-icon--presence-dnd:before{color:#99D04A;}
+  .c-icon--plus-thick{color:#d1d1d1}
   .p-channel_sidebar__channel--im .c-presence--away { color: #949494; }
   .p-channel_sidebar__channel--selected, .p-channel_sidebar__link--selected { background: #252423 !important; border-left:#3578e5 ridge 15px; border-top:#3578e5 inset 1px; border-bottom:#3578e5 outset 1px; zoom:1.1;}
   .p-channel_sidebar__channel--mpim:not(.p-channel_sidebar__channel--draft):before{font-size:25px;color:#9bb6df;}
@@ -357,6 +358,7 @@ body { background: #222; color: #e6e6e6; }
   .channel_header { background: #222; box-shadow: inset 1px 0 0 0 #222; }
   .channel_header .blue_on_hover:hover { color: #e6e6e6; }
   #client_body:not(.onboarding)::before { background: #222; border-bottom: 1px solid #363636; box-shadow: inset 1px 0 0 0 #222; }
+  #client_body:not(.onboarding):not(.feature_global_nav_layout):before{background-color:#222; box-shadow:none;}
   .messages_header { color: #e6e6e6; }
   .channel_title .channel_name_container .channel_name { color: #e6e6e6; }
   .channel_title .channel_name_container .channel_name.muted { color: #949494; }
@@ -424,7 +426,7 @@ body { background: #222; color: #e6e6e6; }
   .c-message--unprocessed .c-message__body { animation: to-grey 50ms linear 10s forwards; }
   .c-message__broadcast_preamble_outer, .c-message__broadcast_preamble { color: #949494; }
   .c-message__sender { color: #e6e6e6; }
-  .c-message__sender a { color: #e6e6e6; }
+  .c-message__sender a { color: #9bb6df; }
   .c-message__sender .c-emoji__text_mode_icon { color: #949494; }
   .c-message__body { color: #e6e6e6; }
   .c-message__body--unknown { background: rgba(84, 84, 84, 0.1); }
@@ -560,6 +562,7 @@ body { background: #222; color: #e6e6e6; }
   .c-message_attachment__part + .c-message_attachment__part::before { color: #545454; }
   .c-message_attachment__author .c-message_attachment__autor--distinct { color: #949494; }
   .c-message_attachment__author_link + .c-message_attachment__author_link { color: #949494; }
+  .c-message_attachment__author_name{ color: #e6e6e6; }
   .c-message_attachment__title_link span { color: #e6e6e6; }
   .c-message_attachment__text_expander { color: #949494; }
   .c-message_attachment__footer { color: #949494; }
@@ -577,7 +580,7 @@ body { background: #222; color: #e6e6e6; }
   .c-message__reply_bar:hover .c-message__reply_bar_arrow, .c-message__reply_bar--focus .c-message__reply_bar_arrow { color: #949494; }
   .c-message__reply_bar:hover .c-message__reply_bar_view_thread, .c-message__reply_bar--focus .c-message__reply_bar_view_thread { background-color: #545454; }
   .c-message__reply_bar_description { color: #949494; }
-  .c-message__file_meta { color: #949494; }
+  .c-message__file_meta, .c-message_kit__file__meta__text { color: #949494; }
   .c-message__image_container { background: rgba(0, 0, 0, 0.1); }
   .c-message__image_wrapper:after { border-color: transparent; }
   .attachment_group.has_container { background: #222; border: 1px solid #363636; }
@@ -769,7 +772,7 @@ body { background: #222; color: #e6e6e6; }
   #page pre, body > pre { background: #000; color: #e6e6e6 !important; }
   body > pre { background: #828282; }
   .special_formatting_quote .quote_bar { background-color: #545454; }
-  #threads_msgs_scroller_div { background: #222; }
+  #threads_msgs_scroller_div, .p-threads_view__default_background { background: #222; }
   #threads_msgs_scroller_div:not(.loading)::before { background: #222; }
   #threads_msgs_scroller_div.loading::before { color: #949494; }
   #threads_msgs_scroller_div .threads_caught_up_divider .divider_line { border-top: 1px solid #363636; }
@@ -789,6 +792,18 @@ body { background: #222; color: #e6e6e6; }
   ts-thread .thread_header .thread_channel_name a { color: #e6e6e6; }
   ts-thread .thread_header .thread_action_btns button { color: #949494; }
   ts-thread .new_reply_indicator .blue_dot { color: #bf360c; }
+  #client-ui .p-threads_view{background-color:#252423}
+  .p-threads_footer__input .p-message_input_field, .p-threads_footer__input--legacy .p-message_input_file_button{background-color:#424242}
+  .c-texty_input .ql-placeholder{filter:none; opacity:1; color:#949494}
+  .c-message_kit__background--labels{background-color:#222}
+  .c-message_kit__background{background-color:#222}
+  .p_threads_view_load_older_button{background-color:#292850}
+  .p_threads_view_load_older_button .c-link--button {color:#3578e5}
+  .c-channel_name__text, .c-channel_name__text--inline{color:#e6e6e6}
+  .p-threads_view_header__participant_list, .c-timestamp__label, .c-message_kit__labels__label{color:#8b8685}
+  .p-threads_view__divider_line{border-color:#993658}
+  .p-threads_view__divider_label{background-color:#363636; color:#e53578}
+  .c-icon--inherit{color:#8b8685}
   #convo_tab .thread_participants, ts-thread .thread_participants { color: #949494; }
   #convo_loading_indicator { background-image: none; }
   .reply_input_container .inline_message_input_container .ql-container { background-color: #545454; border: 1px solid #363636; }
